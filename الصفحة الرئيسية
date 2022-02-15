@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+
+<h3>هذا تصميم تجريبي ان شاء الله اذا نجح انزل لكم الانجيل</h3>
+<form>
+    <label for="like">:انصق الرابط هنا</label><br>
+    <input type="text" id="link" name="ln">
+    <input type="submit" value="Search">
+</form>
+
+</body>
+</html>
