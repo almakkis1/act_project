@@ -1,0 +1,25 @@
+//dont toutch it//
+<div class="nav-header-main">
+    <form action="includes/loginindex.php" method="POST">
+        <input type="text" name ="num" placeholder="Number...">
+        <input type="password" name ="pwd" placeholder="Password...">
+        <button type="submit" name="login-submit">Login</button>
+    </form>
+    <form action="includes/logoutindex.php" method="POST">
+        <button type="submit" name="logout-submit">Logout</button>
+    </form>
+</div>
+    
+    
+    //buttons//
+
+        <div class="row align-items-center">
+            <form class="row g-3">
+
+                <div class="col-auto">
+                    <button name ="Register" type="submit" class="btn btn-primary mb-3">register</button></br>
+                    <button name="Login" type="submit" class="btn btn-primary mb-3" >Login</button>
+                </div>
+
+            </form>
+        </div>

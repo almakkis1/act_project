@@ -1,9 +1,30 @@
+/* .nav-header-main {
+    overflow: hidden;
+    background-color: #333;
+}
+  
+.nav-header-main a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.nav-header-main a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+.nav-header-main a.active {
+    background-color: #0452aa;
+    color: white;
+} */
 
-body {
+body{
 background-image: url('https://www.soudfa.com/content/blog-articles/en-076.jpg');
 background-repeat: repeat;
 background-attachment: fixed;  
-/* background-size: cover; */
+ background-size: cover; 
 background-size: 100% auto;
 height: 200px;
 width: 400px;
@@ -15,27 +36,4 @@ right: 30%;
 margin-top: -100px;
 margin-left: -100px;
 color: white; 
-
 }
-/* .mb-3{
-    padding-left: 50%;
-} */
-/*body {
-    background-image: url('https://www.soudfa.com/content/blog-articles/en-076.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;  
-    background-size: cover;
-
-    height: 200px;
-    width: 400px;
-
-    position: fixed;
-    top: 80%;
-    left: 10%;
-    right: 10%;
-    margin-top: -100px;
-    margin-left: -200px;
-}*/
-
-
-
