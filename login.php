@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <html>
     <head>
@@ -27,3 +28,9 @@
 
     </body>
 </html>
+=======
+<?php 
+    include  'dbh.inc.php';
+    $conn;
+?>
+>>>>>>> d08275c34d73d1221546cf228840c92c248b06b7
