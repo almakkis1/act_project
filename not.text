@@ -23,3 +23,20 @@
 
             </form>
         </div>
+
+//for the video use this link (https://youtu.be/8MgpE2DTTKA) 
+in youtube to know how to put it inside ur website and behind the content//
+
+<html>
+<video autoplay muted loop id="myVideo">
+    <source src="rain.mp4" type="video/mp4">
+</video>
+
+<css>
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
