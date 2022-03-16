@@ -1,6 +1,6 @@
 <?php   
     // include_once 'icludes/dbh.inc.php';
-    require "style/header.php";  
+    require "header.php";  
         ?>
     <main class="body">
         
@@ -22,5 +22,5 @@
 
     </main>
 <?php 
-    require "style/footer.php";
+    require "footer.php";
         ?>
