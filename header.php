@@ -64,20 +64,31 @@ body {
     direction:ltr;
 }
 .body{
-    padding-top: 10rem;
+    padding-top: 25rem;
     text-align: center;
     justify-content:baseline;
 }
-.mb-3{
-    display:flex;
+#scam{
     text-align: center;
 }
-.text {
-    
+#scam1{
+    padding-right: 30%;
+    padding-left: 30%;
 }
+.text {
+    display: flex;
+    margin-left: 45%;
+}
+#rep{
+    margin-left:2rem;
+}
+#rep a {
+    color: aliceblue;
+    text-decoration-line:none;
+}
+
 </style>
     <body>
-
         <header>
             <nav class="navbar">
                 <div class="brand">Scammer book</div>
