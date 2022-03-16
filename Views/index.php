@@ -7,7 +7,7 @@
     <div>
         <form class="row g-3">
         <div class="col-12">
-            <input type="text" class="form-control" name="scam" placeholder="Repeat Password">
+            <input type="text" class="form-control" name="scam" placeholder="SCAMMER NUMBER OR LINK ...">
         </div>
         <div class = "text">
             <div class="col-auto">

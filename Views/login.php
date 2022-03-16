@@ -1,18 +1,25 @@
 
 <?php require 'style/header.php'; ?>
-    <form >
-      <div>
-        <form action="report.php" method="POST">        <label for="number" id="txt">Mobile number</label>
-        <label for="Password" id="txt2" >Password</label>
-                      
-          <input type="email" id="number" name="lognumber">
-          <input type="password" id ="password" name="logPassword">
-        
-          <button type="submit" name="btnLogin" id = "submit">Login</button>
-        </form>
-      </div>
-      <a href="Signup.php">Signup</a>
+<main class="login-main">   
+  <div class="center">
+    <h1>Login</h1>
+    <form action="" method="post">
+       <div class="txt_field">
+         <input type="text" required>
+         <span></span>
+         <label>Username</label>
+       </div>
+       <div class="txt_field">
+         <input type="password" required>
+         <span></span>
+         <label>Password</label>
+       </div>
+       <div class="pass">Forgot Password?</div>
+       <input type="submit" value = "Login">
+       <div class="signup_link">
+         Not a member? <a href="signup.php">Signup</a>
+       </div>
     </form>
-
-
+  </div>    
+</main> 
 <?php require 'style/footer.php';?>
