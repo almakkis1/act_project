@@ -2,7 +2,7 @@
     <head>
         <title>Scammer Book</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+        
     </head>
 <style>
 body { 
@@ -71,7 +71,13 @@ body {
     display:flex;
     text-align: center;
 }
-
+.col-auto {
+    display: inline-block;
+}
+#rep {
+    margin-top: 12px;
+    display: inline-block;
+}
 </style>
     <body>
 
@@ -80,9 +86,9 @@ body {
                 <div class="brand">Scammer book</div>
                 <div class = "navbar-links">
                     <ul>
-                        <li><a href="views/index.php">Home</a></li>
-                        <li><a href="views/about.php">About us</a></li>
-                        <li><a href="views/contact.php">Contact</a></li>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="about.php">About us</a></li>
+                        <li><a href="contact.php">Contact</a></li>
                     </ul>
                 </div>
             </nav>

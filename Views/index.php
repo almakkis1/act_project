@@ -1,6 +1,6 @@
 <?php   
     // include_once 'icludes/dbh.inc.php';
-    require "header.php";  
+    require "style/header.php";  
         ?>
     <main class="body">
         
@@ -11,16 +11,15 @@
             </div>
         <div class = "text">
             <div class="col-auto">
-            <button name ="btnSearch" type="submit" class="btn btn-primary mb-3">Search</button>
-        </div>
-        <div class="col-auto">
-            <button name="btnReport" type="submit" class="btn btn-primary mb-3" id="rep">Report</button>
-        </div>
+            <button name ="btnSearch" type="submit" class="btn btn-primary mb-3" id="sea">Search</button>
+            </div>  <button name="btnReport" type="submit" class="btn btn-primary mb-3" id="rep">Report</button>
+        <div class="col-auto">        
+            </div>
         </div>
         </form>
     </div>
 
     </main>
 <?php 
-    require "footer.php";
+    require "style/footer.php";
         ?>
