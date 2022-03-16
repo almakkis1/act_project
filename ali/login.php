@@ -1,5 +1,5 @@
-<php 
-    include = 'includes/dbh.inc.php';
+<?php 
+    include  'includes/dbh.inc.php';
     $conn;
 ?>
 
@@ -33,7 +33,7 @@
 </head>
 <body class="container">
    <div class="row align-items-center">
-            <form>
+            <form action="">
                 <div class="mb-3">
                   <label for="number" >Mobile number</label>
                   <input type="email" id="number" name="lognumber">
