@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+.body{
+    padding-top: 10rem;
+    text-align: center;
+    justify-content:baseline;
+}
+
+
+.mb-3{
+    display:flex;
+    text-align: center;
+}
+.col-auto {
+    display: inline-block;
+}
+#rep {
+    margin-left: 10px;
+    margin-top: 12px;
+    display: inline-block;
+}
+.col-12 {
+    padding-right: 25%;
+    padding-left: 25%;
+    margin-top: 17rem;
+}
+#rep a {
+    text-decoration-line: none;
+    color:aliceblue;
+}

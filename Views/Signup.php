@@ -1,5 +1,52 @@
 <?php require 'style/header.php'?>
-<form  class="rowg-3" action="icludes/loginindex.php" method="POST">
+<main class="signup">
+<div class="container">
+  <div class="title">Registration</div>
+  <form action="">
+    <div class="user-details">
+      <div class="input-box">
+        <span class="details">Full name</span>
+        <input type="text" placeholder="Enter your name" required>
+      </div>
+      <div class="input-box">
+        <span class="details">First name</span>
+        <input type="text" placeholder="Enter your first name" required>
+      </div>      <div class="input-box">
+        <span class="details">Last name</span>
+        <input type="text" placeholder="Enter your last name" required>
+      </div>      <div class="input-box">
+        <span class="details">Username</span>
+        <input type="text" placeholder="Enter your username" required>
+      </div>      <div class="input-box">
+        <span class="details">Phone Number</span>
+        <input type="text" placeholder="Enter your number" required>
+      </div>      <div class="input-box">
+        <span class="details">Password</span>
+        <input type="text" placeholder="Enter your password" required>
+      </div>      <div class="input-box">
+        <span class="details">Repeat Password</span>
+        <input type="text" placeholder="Repeat your password" required>
+      </div>
+    </div>
+    <div class="gender-details">
+      <span class="gender-title">Gender</span>
+      <div class="category">
+        <label for="">
+          <span class="dot one"></span>
+          <span class="gender">Male</span>
+        </label>
+        <label for="">
+          <span class="dot one"></span>
+          <span class="gender">Female</span>
+      </div>
+    </div>
+    <div class="btn">
+      <input type="submit" value="Register">
+    </div>
+  </form>
+</div>
+</main>
+<!-- <form  class="rowg-3" action="icludes/loginindex.php" method="POST">
     <div id="a1">
       <input type="text" class="form-control" name="first" placeholder="First Name">
     </div>
@@ -21,5 +68,5 @@
     <div id="btn">
       <button type="submit" class="btn btn-primary" name="signup">Sign up</button>
     </div>
-  </form>
+  </form> -->
   <?php require 'style/footer.php'?>
