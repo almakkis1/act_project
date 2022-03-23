@@ -32,6 +32,8 @@ in youtube to know how to put it inside ur website and behind the content//
     <source src="rain.mp4" type="video/mp4">
 </video>
 
+for the report page in css use this link (https://youtu.be/CGkv7zYaA_w)
+to do the post or the comment section atleast <3
 <css>
 #myVideo {
     position: fixed;

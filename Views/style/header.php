@@ -7,7 +7,8 @@
         <link rel="stylesheet" href="style/login.css">
         <link rel="stylesheet" href="style/index.css">
         <link rel="stylesheet" href="style/signup.css">
-        
+        <link rel="stylesheet" href="style/login-index.css">
+        <link rel="stylesheet" href="style/comment.css">    
     </head>
     <body>
         <header>
@@ -18,6 +19,15 @@
                         <li><a href="index.php">Home</a></li>
                         <li><a href="about.php">About us</a></li>
                         <li><a href="contact.php">Contact us</a></li>
+                        <!-- <div class="navlog">
+                            <form action="loginindex" method="POST">
+                                <div class="navinpout">
+                                    <input type="text" name="uid" placeholder="Username">
+                                    <input type="password" name="pass" placeholder="Password">
+                                </div>
+                                <button type="submit" name="login" id="navbtn">Login</button>
+                            </form>
+                        </div> -->
                     </ul>
                 </div>
             </nav>

@@ -15,7 +15,9 @@ body {
     align-items: center;
     background-color: #333;
     color: white;
-    
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 .navbar-links ul {
@@ -39,3 +41,17 @@ body {
 .navbar{
     direction:ltr;
 }
+/* .navlog {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    right: 0;
+    
+}
+.navbtn {
+    position: absolute;
+    top: 50px;
+    right: 10rem;
+    
+} */
