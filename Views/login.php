@@ -1,6 +1,15 @@
 
-<?php include_once 'includes/functions.php';
-require 'style/header.php'; ?>
+<?php 
+
+  
+  include_once 'includes/functions.php';
+  require 'style/header.php'; 
+
+
+?>
+
+
+
 <main class="login-main">   
   <div class="center">
     <h1>Login</h1>
@@ -23,4 +32,5 @@ require 'style/header.php'; ?>
     </form>
   </div>    
 </main> 
+
 <?php require 'style/footer.php';?>

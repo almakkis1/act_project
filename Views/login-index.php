@@ -1,4 +1,9 @@
-<?php require 'style/header.php';?>
+<?php 
+
+    require 'style/header.php';
+
+
+?>
 
 
 <div class="searchcontainer">
