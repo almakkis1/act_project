@@ -32,6 +32,8 @@ in youtube to know how to put it inside ur website and behind the content//
     <source src="rain.mp4" type="video/mp4">
 </video>
 
+for the report page in css use this link (https://youtu.be/CGkv7zYaA_w)
+to do the post or the comment section atleast <3
 <css>
 #myVideo {
     position: fixed;
@@ -40,3 +42,141 @@ in youtube to know how to put it inside ur website and behind the content//
     min-width: 100%;
     min-height: 100%;
   }
+for the comment page :
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <section>
+        <div class="container"> 
+            <div class="box1"></div>   
+                <div class="user1">User</div>
+                <div class="report">scammer</div>
+                <div class="contant">contant</div>
+            <div class="box2"></div>
+                <div class="user2">user</div>
+                <div class="comment">comment</div>
+                <div class="user"></div>
+                <div class="input"><input type="text" placeholder="the comment..."></div>
+                <button type="submit" class="btn">send</button>
+        </div> 
+    </section>
+</body>
+</html>
+and for the style there is the code :
+body{
+    margin: 0;
+    padding: 0;
+}
+section{
+    font-size: 20px ;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 99vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 5px solid gray;
+}
+.container{
+    width: 90vh;
+    height: 700px;
+    background-color: gray;
+    margin: 0 auto;
+    border-radius: 20px; 
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;  
+}
+.box1{
+    border-radius: 20px;
+    top: 20px;
+    position: absolute;
+    height: 30%;
+    width: 95%;
+    background:black;
+    border: 1px solid gray;
+}
+.box2{
+    border-radius: 20px;
+    bottom: 20px;
+    position: absolute;
+    height: 60%;
+    width: 95%;
+    background:black;
+    border: 1px solid gray;
+}
+.user1{
+    border-radius: 5px;
+    position:absolute;
+    height: 40px;
+    width: 175px;
+    background: gray;
+    top: 30px;
+    left: 30px;
+}
+.user2{
+    border-radius: 5px;
+    position:absolute;
+    height: 40px;
+    width: 175px;
+    background: gray;
+    top: 270px;
+    left: 30px;
+}
+.report{
+    border-radius: 5px;
+    position:absolute;
+    height: 40px;
+    width: 175px;
+    background: white;
+    top: 30px;
+    left: 220px;
+    text-align: center;
+}
+.contant{
+    border-radius: 5px;
+    position: absolute;
+    top: 82px;
+    left: 30px;
+    width: 93%;
+    height: 137px;
+    background: white;
+    text-align: center;
+}
+.comment{
+    position: absolute;
+    height: 137px;
+    width: 93%;
+    background: white;
+    left: 30px;
+    top: 323px;
+    text-align: center;
+    border-radius: 5px;
+}
+.input input{
+    position: absolute;
+    width: 92.2%;
+    left: 30px;
+    height: 50px;
+    bottom: 30px;
+    border-radius: 50px;
+    text-align:center;
+}
+.btn{
+    position: absolute;
+    width: 10%;
+    right: 30px;
+    height: 55px;
+    bottom: 30px;
+    border-radius: 50px;
+    text-align:center;
+    background: #aaa;
+    cursor: pointer;
+}

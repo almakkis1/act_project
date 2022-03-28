@@ -1,0 +1,15 @@
+.box{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.dis{
+    
+    background: white;
+    width: 50%;
+    height: 50%;
+}

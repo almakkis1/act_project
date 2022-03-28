@@ -1,9 +1,19 @@
 
-<?php require 'style/header.php'; ?>
+<?php 
+
+  
+  include_once 'includes/functions.php';
+  require 'style/header.php'; 
+
+
+?>
+
+
+
 <main class="login-main">   
   <div class="center">
     <h1>Login</h1>
-    <form action="" method="post">
+    <form action="login-index.php" method="post">
        <div class="txt_field">
          <input type="text" required>
          <span></span>
@@ -22,4 +32,5 @@
     </form>
   </div>    
 </main> 
+
 <?php require 'style/footer.php';?>

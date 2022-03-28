@@ -1,36 +1,51 @@
-<?php require 'style/header.php'?>
+<?php 
+  require 'style/header.php';
+  include 'includes/Open-db.php';
+  include 'form/fsginup.php';
+
+  $sql = 'SELECT * FROM users';
+  $result = mysqli_query($connect,$sql);
+
+?>
+
 <main class="signup">
 <div class="container">
   <div class="title">Registration</div>
-  <form action="">
+  
+  <form action="Signup.php" method="POST">
     <div class="user-details">
       <div class="input-box">
         <span class="details">Full name</span>
-        <input type="text" placeholder="Enter your name" required>
+        <input type="text" placeholder="Enter your name">
       </div>
       <div class="input-box">
         <span class="details">First name</span>
-        <input type="text" placeholder="Enter your first name" required>
-      </div>      <div class="input-box">
+        <!--first name--><input type="text" name="firstname" placeholder="Enter your first name" required>
+      </div>      
+      <div class="input-box">
         <span class="details">Last name</span>
-        <input type="text" placeholder="Enter your last name" required>
-      </div>      <div class="input-box">
+       <!--last name--> <input type="text" name="lastname" placeholder="Enter your last name" required>
+      </div>      
+      <div class="input-box">
         <span class="details">Username</span>
-        <input type="text" placeholder="Enter your username" required>
+        <!--username--><input type="text" name="username" placeholder="Enter your username" required>
       </div>      <div class="input-box">
         <span class="details">Phone Number</span>
-        <input type="text" placeholder="Enter your number" required>
+        <!--phone number--><input type="number" name="phone" placeholder="Enter your number" required>
       </div>      <div class="input-box">
         <span class="details">Password</span>
-        <input type="text" placeholder="Enter your password" required>
-      </div>      <div class="input-box">
+        <!--password--><input type="password" name="pass" placeholder="Enter your password" required>
+      </div>      
+      
+      <div class="input-box">
         <span class="details">Repeat Password</span>
-        <input type="text" placeholder="Repeat your password" required>
+        <!--re password--><input type="password" name="re-pass" placeholder="Repeat your password" required>
       </div>
     </div>
+    
     <div class="gender-details">
       <input type="radio" name="gender" id="dot-1">
-      <input type="radio" name="gender" id="dot-2">
+      <!--the gender--><input type="radio" name="gender" id="dot-2">
       <span class="gender-title">Gender</span>
       <div class="category">
         <label for="dot-1">
@@ -43,9 +58,16 @@
       </div>
     </div>
     <div id="btn">
-      <input type="submit" value="Register">
+      <!-- submit --><input type="submit" name="submit" value="Register">
     </div>
   </form>
+
 </div>
 </main>
-  <?php require 'style/footer.php'?>
+
+  <?php 
+  
+    require 'style/footer.php';
+    $users = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    mysqli_close($connect);  
+  ?>
