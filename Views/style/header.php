@@ -18,6 +18,7 @@
                         <li><a href="index.php">Home</a></li>
                         <li><a href="about.php">About us</a></li>
                         <li><a href="contact.php">Contact us</a></li>
+                        <li><a href="profile.php">Contact us</a></li>
                     </ul>
                 </div>
             </nav>
