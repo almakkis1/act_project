@@ -2,9 +2,8 @@
   require 'style/header.php';
   include 'includes/Open-db.php';
   include 'form/fsginup.php';
+  include 'includes/fetch.php';
 
-  $sql = 'SELECT * FROM users';
-  $result = mysqli_query($connect,$sql);
 
 ?>
 
@@ -68,6 +67,5 @@
   <?php 
   
     require 'style/footer.php';
-    $users = mysqli_fetch_all($result, MYSQLI_ASSOC);
     mysqli_close($connect);  
   ?>
