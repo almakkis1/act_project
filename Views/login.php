@@ -7,7 +7,29 @@
 
   
 ?>
+<?php
 
+if (isset($_POST["submit"])){
+  
+  foreach($users as $user){
+
+    if($_POST['username'] == $user['username']){
+
+
+      
+
+      if($_POST['pass'] == $user['pass']){
+
+        header("location: index.php");
+        
+        echo "true";
+
+      }   
+    }
+  }
+}
+
+?>
 
 
 <main class="login-main">   

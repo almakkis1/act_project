@@ -1,6 +1,5 @@
 <?php
-include 'Open-db.php';
-include '.includes/fetch.php';
+
 
 
 if(isset($_POST['submit']) ){

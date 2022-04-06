@@ -1,11 +1,11 @@
 <?php 
   require 'style/header.php';
-  include 'includes/Open-db.php';
   include 'form/fsginup.php';
   include 'includes/fetch.php';
 
 
 ?>
+
 
 <main class="signup">
 <div class="container">
@@ -67,5 +67,4 @@
   <?php 
   
     require 'style/footer.php';
-    mysqli_close($connect);  
   ?>
