@@ -1,6 +1,5 @@
 <?php 
   require 'style/header.php';
-  include 'form/fsginup.php';
   include 'includes/fetch.php';
 
 
@@ -11,7 +10,7 @@
 <div class="container">
   <div class="title">Registration</div>
   
-  <form action="Signup.php" method="POST">
+  <form action="login.php" method="POST">
     <div class="user-details">
       <div class="input-box">
         <span class="details">Full name</span>

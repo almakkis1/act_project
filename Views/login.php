@@ -1,12 +1,11 @@
 
 <?php 
-
   require 'style/header.php'; 
   include 'includes/Open-db.php';
   include 'includes/fetch.php';
-
-  
+  include 'form/fsginup.php';
 ?>
+
 <?php
 
 if (isset($_POST["submit"])){
@@ -20,9 +19,9 @@ if (isset($_POST["submit"])){
 
       if($_POST['pass'] == $user['pass']){
 
-        header("location: index.php");
+        header("location: login-index.php");
         
-        echo "true";
+        
 
       }   
     }
