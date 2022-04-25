@@ -1,3 +1,15 @@
+<?php
+  include 'includes/Open-db.php';
+
+?>
+
+<?php
+
+if(isset($_POST['submit'])){
+
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

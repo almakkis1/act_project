@@ -15,4 +15,7 @@
 </div>
 
 
-<?php require 'style/footer.php';?>
+<?php 
+
+require 'style/footer.php';
+?>
