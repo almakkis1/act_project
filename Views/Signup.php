@@ -1,6 +1,9 @@
 <?php 
   require 'style/header.php';
+<<<<<<< HEAD
   include 'includes/Open-db.php';
+=======
+>>>>>>> d5ea87ad7fb4f57c0dc947b27cfb8a893a6844d0
   include 'includes/fetch.php';
 
 
