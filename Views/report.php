@@ -1,13 +1,13 @@
 <?php
-  include 'includes/Open-db.php';
+  //include 'includes/Open-db.php';
 
 ?>
 
 <?php
 
-if(isset($_POST['submit'])){
+//if(isset($_POST['submit'])){
 
-}
+//}
 
 ?>
 <!DOCTYPE html>
@@ -60,5 +60,3 @@ if(isset($_POST['submit'])){
         </div>
 </body>
 </html>
-    
-
