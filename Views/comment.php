@@ -1,7 +1,8 @@
 <?php
+    //require 'style/header.php'; 
     include 'includes/Open-db.php';
-
-  $sql = 'SELECT * FROM comment';
+  
+    $sql = 'SELECT * FROM comment';
   $result = mysqli_query($connect,$sql);
   $comment = mysqli_fetch_all($result, MYSQLI_ASSOC);
   mysqli_free_result($result);
@@ -26,13 +27,14 @@
                 <div class="report">scammer</div>
                 <div class="contant">
                 <?php
-                    foreach($comment as $comm){
+                   /* ماحتاجه
+                   foreach($comment as $comm){
 
                         echo $comm['scamer'];
                         echo "</br>";
                         echo "</br>";
 
-                    }
+                    }*/
                     ?> 
                 </div>
             <div class="box2"></div>
@@ -41,7 +43,7 @@
                     <?php
                     foreach($comment as $comm){
 
-                        echo $comm['comment'];
+                        echo '('.$comm['scamer'].') '.$comm['comment'];
                         echo "</br>";
                         echo "</br>";
 
