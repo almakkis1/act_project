@@ -20,13 +20,6 @@ if (isset($_POST["submit"])){
       if($_POST['pass'] == $user['pass']){
 
         header("location: login-index.php");
-<<<<<<< HEAD
-        
-=======
-        
-        
-
->>>>>>> d5ea87ad7fb4f57c0dc947b27cfb8a893a6844d0
       }   
     }
   }

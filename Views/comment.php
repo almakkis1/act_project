@@ -1,9 +1,9 @@
 <?php
     include 'includes/Open-db.php';
 
-  $sql1 = 'SELECT * FROM comment';
-  $result = mysqli_query($connect,$sql1);
-  $users = mysqli_fetch_all($result, MYSQLI_ASSOC);
+  $sql = 'SELECT * FROM comment';
+  $result = mysqli_query($connect,$sql);
+  $comment = mysqli_fetch_all($result, MYSQLI_ASSOC);
   mysqli_free_result($result);
 
 ?>
@@ -24,10 +24,30 @@
             <div class="box1"></div>   
                 <div class="user1">User</div>
                 <div class="report">scammer</div>
-                <div class="contant">contant</div>
+                <div class="contant">
+                <?php
+                    foreach($comment as $comm){
+
+                        echo $comm['scamer'];
+                        echo "</br>";
+                        echo "</br>";
+
+                    }
+                    ?> 
+                </div>
             <div class="box2"></div>
                 <div class="user2">user</div>
-                <div class="comment">comment</div>
+                <div class="comment">
+                    <?php
+                    foreach($comment as $comm){
+
+                        echo $comm['comment'];
+                        echo "</br>";
+                        echo "</br>";
+
+                    }
+                    ?>
+                </div>
                 <div class="user"></div>
                 <div class="input">
                     <input type="text" placeholder="the comment...">

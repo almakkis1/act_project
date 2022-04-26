@@ -1,7 +1,7 @@
 <?php 
   require 'style/header.php';
-  // include 'includes/Open-db.php';
-  // include 'includes/fetch.php';
+  include 'includes/Open-db.php';
+  include 'includes/fetch.php';
 ?>
 
 <main class="signup">
