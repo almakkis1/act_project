@@ -1,11 +1,12 @@
 <?php
-    //require 'style/header.php'; 
-    // include 'includes/Open-db.php';
+    require 'style/header.php'; 
+    include 'includes/Open-db.php';
   
-//     $sql = 'SELECT * FROM comment';
-//   $result = mysqli_query($connect,$sql);
-//   $comment = mysqli_fetch_all($result, MYSQLI_ASSOC);
-//   mysqli_free_result($result);
+    $Tool = $_GET['search'];
+    $sql = 'SELECT * FROM comment';
+    $result = mysqli_query($connect,$sql);
+    $comment = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    mysqli_free_result($result);
 
 ?>
 
@@ -22,21 +23,6 @@
 <body>
     <section>
         <div class="container"> 
-            <!-- <div class="box1"></div>   
-                <div class="user1">User</div>
-                <div class="report">scammer</div>
-                <div class="contant">
-                <?php
-                   /* ماحتاجه
-                   foreach($comment as $comm){
-
-                        echo $comm['scamer'];
-                        echo "</br>";
-                        echo "</br>";
-
-                    }*/
-                    ?> 
-                </div> -->
             <div class="box2">
                 
                 <div class="user2">user</div>
@@ -45,11 +31,21 @@
                                       
                     <?php
                     foreach($comment as $comm){
-
+                        if($comm['scamer'] == $Tool){
                         echo '('.$comm['scamer'].') '.$comm['comment'];
                         echo "</br>";
                         echo "</br>";
+                        }
+                        elseif($comm['scamer'] != $Tool){
+                            
+                        echo "<h3>"; 
+                        echo 'The Number Is  Not Define In Our Record.</br>if you want you can</br> report him just prees on this button';
+                        echo "</br>";
+                        echo '<button type = "submit"><a href = report.php> Report </a></button>';
+                        echo "</h3>";
 
+                        break;
+                        }
                     }
                     ?>  
                    
