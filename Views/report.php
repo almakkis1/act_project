@@ -1,6 +1,6 @@
 <?php
-  //require 'style/header.php'; 
-  include 'includes/Open-db.php'; 
+  // require 'style/header.php'; 
+  // include 'includes/Open-db.php'; 
 
 ?>
 
@@ -48,8 +48,8 @@ if(isset($_POST['submit'])){
                     </div> -->
                   </div>
                 </div>
-                <input type="number" placeholder="The scammer number" name='scamer' required>
-                <input type="text" placeholder="The report..." spellcheck="false" name='comment' required >
+                <textarea type="number" placeholder="The scammer number" spellcheck="false" name='scamer' required></textarea>
+                <textarea type="text" placeholder="The report..." spellcheck="false" name='comment' required ></textarea>
                 <div class="theme-emoji">
                   <img src="icons/theme.svg" alt="theme">
                   <img src="icons/smile.svg" alt="smile">
@@ -64,7 +64,7 @@ if(isset($_POST['submit'])){
                     <li><img src="icons/more.svg" alt="gallery"></li>
                   </ul>
                 </div>
-                <input type="submit" value ='submit' name='submit'>
+                <button type="submit" value ='submit' name='submit'>Submit</button>
               </form>
             </section>
           </div>

@@ -1,40 +1,10 @@
 *{
     box-sizing: border-box;
 }
-body{
-    background-image: url('https://www.soudfa.com/content/blog-articles/en-076.jpg');
-    background-repeat: repeat;
-    background-attachment: fixed;  
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-}
-section{
-    font-size: 20px ;
-    font-family: Arial, Helvetica, sans-serif;
-    height: 99vh;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-.container{
-    width: 90vh;
-    height: 700px;
-    background-color: rgb(255, 255, 255);
-    background: 
-    linear-gradient(
-        purple ,
-        black 40%
-        );
-    box-shadow: 0 0 18px 0;
-    margin: 0 auto;
-    border-radius: 20px; 
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    display: flex;  
-}
-.box1{
+
+
+
+/* .box1{
     border-radius: 20px;
     top: 20px;
     position: absolute;
@@ -42,20 +12,9 @@ section{
     width: 95%;
     background: hsl(289, 52%, 19% );
     
-}
-.box2{
-    border-radius: 20px;
-    bottom: 20px;
-    position: absolute;
-    height: 60%;
-    width: 95%;
-    background: 
-    linear-gradient(
-        purple ,
-        black 60%
-    );
-}
-.user1{
+} */
+
+/* .user1{
     display: flex;
     justify-content:center;
     align-items: center;
@@ -66,20 +25,9 @@ section{
     background: white;
     top: 30px;
     left: 30px;
-}
-.user2{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    border-radius: 5px;
-    position:absolute;
-    height: 40px;
-    width: 175px;
-    background: white;
-    top: 270px;
-    left: 30px;
-}
-.report{
+} */
+
+/* .report{
     border-radius: 5px;
     position:absolute;
     height: 40px;
@@ -88,8 +36,8 @@ section{
     top: 30px;
     left: 220px;
     text-align: center;
-}
-.contant{
+} */
+/* .contant{
     display: flex;
     justify-content:center;
     align-items: center;
@@ -101,56 +49,15 @@ section{
     height: 137px;
     background: white;
     text-align: center;
-}
-.comment{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    position: absolute;
-    height: 137px;
-    width: 93%;
-    background: white;
-    left: 30px;
-    top: 323px;
-    text-align: center;
-    border-radius: 5px;
-}
-.input input{
-    position: absolute;
-    width: 92.2%;
-    left: 30px;
-    height: 50px;
-    bottom: 30px;
-    border-radius: 50px;
-    text-align:center;
-}
-input{
+} */
+
+
+/* input{
     position: relative;
     display: flex;
     justify-items: center;
     align-items: center;
-    transition: 500ms ease;
-}
-input:hover{
-    filter: drop-shadow(0 0 0.5rem dodgerblue);
-}
-input:focus{
-    text-decoration-line: none;
-}
-.input .btn{
-    color: white;
-    position: absolute;
-    width: 55px;
-    right: 25px;
-    height: 55px;
-    bottom: 27px;
-    border-radius: 50px;
-    text-align:center;
-    background:dodgerblue; 
-    cursor: pointer;
-    transition: 500ms ease;
-}
-.btn:hover{
-    filter: drop-shadow(0 0 1rem dodgerblue);
-    transform: scale(1.1);
-}
+    
+} */
+
+
