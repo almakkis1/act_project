@@ -1,5 +1,7 @@
-<?php   // include_once 'icludes/dbh.inc.php';
-require "style/header.php";  ?>
+<?php   
+    // include_once 'icludes/dbh.inc.php';
+    require "style/header.php";
+?>
     <main class="body">
         
     <div>

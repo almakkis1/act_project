@@ -1,13 +1,11 @@
 * {
     box-sizing: border-box;
 }
-
 .body{
     padding-top: 10rem;
     text-align: center;
-    justify-content:baseline;
+    justify-content:baseline; 
 }
-
 .mb-3{
     display:flex;
     text-align: center;

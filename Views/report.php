@@ -1,13 +1,24 @@
 <?php
-  //include 'includes/Open-db.php';
+  //  require 'style/header.php'; 
+   include 'includes/Open-db.php'; 
 
 ?>
 
 <?php
 
-//if(isset($_POST['submit'])){
+if(isset($_POST['submit'])){
 
-//}
+  $scamer = $_POST['scamer'];
+  $comment = $_POST['comment'];
+  $sql = "INSERT INTO `comment`(`scamer`,`comment`) VALUES ('$scamer','$comment')"; 
+
+  if(mysqli_query($connect,$sql)){
+
+  header('Location: comment.php');
+}else{
+    echo 'ERROR'. mysqli_connect_errno();
+}
+}
 
 ?>
 <!DOCTYPE html>
@@ -25,7 +36,7 @@
           <div class="wrapper">
             <section class="post">
               <header>Report</header>
-              <form action="#">
+              <form action="report.php" method='POST'>
                 <div class="content">
                   <img src="icons/images.jpg" alt="logo">
                   <div class="details">
@@ -37,8 +48,8 @@
                     </div> -->
                   </div>
                 </div>
-                <textarea placeholder="The number or the link..." spellcheck="false" required></textarea>
-                <textarea placeholder="The report..." spellcheck="false" required></textarea>
+                <textarea type="number" placeholder="The scammer number" spellcheck="false" name='scamer' required></textarea>
+                <textarea type="text" placeholder="The report..." spellcheck="false" name='comment' required ></textarea>
                 <div class="theme-emoji">
                   <img src="icons/theme.svg" alt="theme">
                   <img src="icons/smile.svg" alt="smile">
@@ -53,10 +64,11 @@
                     <li><img src="icons/more.svg" alt="gallery"></li>
                   </ul>
                 </div>
-                <button>Post</button>
+                <button type="submit" value ='submit' name='submit'>Submit</button>
               </form>
             </section>
           </div>
         </div>
 </body>
+
 </html>

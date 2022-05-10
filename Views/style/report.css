@@ -7,16 +7,12 @@
   font-family: 'Poppins', sans-serif;
 }
 body{
-    background-image: url('https://www.soudfa.com/content/blog-articles/en-076.jpg');
-    background-repeat: repeat;    
-    background-attachment: fixed;  
-    background-size: cover; 
-    background-size: 100% auto;
+    
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-  /* background: linear-gradient(#00C6FF, #0078FF); */
+    background:linear-gradient(black,grey);
 }
 ::selection{
   color: #fff;

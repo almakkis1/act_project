@@ -10,9 +10,10 @@
 
 if (isset($_POST["submit"])){
   
+  $account_number = $_POST['Phone'];
   foreach($users as $user){
 
-    if($_POST['username'] == $user['username']){
+    if($_POST['Phone'] == $user['phone_number']){
 
 
       
@@ -20,13 +21,6 @@ if (isset($_POST["submit"])){
       if($_POST['pass'] == $user['pass']){
 
         header("location: login-index.php");
-<<<<<<< HEAD
-        
-=======
-        
-        
-
->>>>>>> d5ea87ad7fb4f57c0dc947b27cfb8a893a6844d0
       }   
     }
   }
@@ -40,9 +34,9 @@ if (isset($_POST["submit"])){
     <h1>Login</h1>
     <form action="login.php" method="POST">
        <div class="txt_field">
-         <input type="text" required name = "username">
+         <input type="text" required name = "Phone">
          <span></span>
-         <label>Username</label>
+         <label>Phone</label>
        </div>
        <div class="txt_field">
          <input type="password" required name = "pass">

@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color :linear-gradient(black,grey);
 }
 .brand {
     font-family: arial,Helvetica, sans-serif;
@@ -41,17 +42,3 @@ body {
 .navbar{
     direction:ltr;
 }
-/* .navlog {
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    top: 0;
-    right: 0;
-    
-}
-.navbtn {
-    position: absolute;
-    top: 50px;
-    right: 10rem;
-    
-} */
