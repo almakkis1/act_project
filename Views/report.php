@@ -1,5 +1,5 @@
 <?php
-  //  require 'style/header.php'; 
+   require 'style/header.php'; 
    include 'includes/Open-db.php'; 
 
 ?>

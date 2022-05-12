@@ -28,7 +28,7 @@
                 <div class="user2">user</div>
                 <div class="comment">
                 
-                                    
+                                      
                     <?php
                     foreach($comment as $comm){
                         if($comm['scamer'] == $Tool){
