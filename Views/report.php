@@ -1,6 +1,8 @@
 <?php
+
   //  require 'style/header.php'; 
   include 'includes/Open-db.php';
+
 ?>
 
 <?php

@@ -29,7 +29,7 @@
                 <div class="user2">user</div>
                 <div class="comment">
                 
-                                    
+                                      
                     <?php
                     
                     if(isset($_GET["searchsubmit"])){
