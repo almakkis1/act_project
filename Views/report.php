@@ -1,16 +1,16 @@
 <?php
   //  require 'style/header.php'; 
-   include 'includes/Open-db.php'; 
-
+  include 'includes/Open-db.php';
 ?>
 
 <?php
-
+///////////////FOR REPORT PAJE///////////////
 if(isset($_POST['submit'])){
 
   $scamer = $_POST['scamer'];
   $comment = $_POST['comment'];
   $sql = "INSERT INTO `comment`(`scamer`,`comment`) VALUES ('$scamer','$comment')"; 
+  
 
   if(mysqli_query($connect,$sql)){
 
@@ -19,6 +19,24 @@ if(isset($_POST['submit'])){
     echo 'ERROR'. mysqli_connect_errno();
 }
 }
+
+////////////////FOR COMMENT PAJE/////////////////
+if(isset($_POST["send"])){
+  $scamer = $_POST['scamer'];
+  $comment = $_POST['comment'];
+  $sql = "INSERT INTO `comment`(`scamer`,`comment`) VALUES ('$scamer','$comment')"; 
+  
+
+  if(mysqli_query($connect,$sql)){
+
+  header('Location: login-index.php');
+}else{
+    echo 'ERROR'. mysqli_connect_errno();
+}
+}
+
+
+
 
 ?>
 <!DOCTYPE html>

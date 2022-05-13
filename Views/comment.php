@@ -1,12 +1,13 @@
 <?php
     require 'style/header.php'; 
     include 'includes/Open-db.php';
-  
-    $Tool = $_GET['search'];
+    
     $sql = 'SELECT * FROM comment';
     $result = mysqli_query($connect,$sql);
     $comment = mysqli_fetch_all($result, MYSQLI_ASSOC);
     mysqli_free_result($result);
+
+
 
 ?>
 
@@ -30,6 +31,14 @@
                 
                                     
                     <?php
+                    
+                    if(isset($_GET["searchsubmit"])){
+
+                        $Tool = $_GET["search"];
+                    }else{
+                        $Tool =" ";
+                    }
+                    
                     foreach($comment as $comm){
                         if($comm['scamer'] == $Tool){
                         echo '('.$comm['scamer'].') '.$comm['comment'];
@@ -40,7 +49,7 @@
                             
                         echo "<h3>"; 
                         echo 'The Number Is  Not Define In Our Record.</br>if you want you can</br> report him just prees on this button';
-                        echo "</br>";
+                        echo $Tool."</br>";
                         echo '<button type = "submit"><a href = report.php> Report </a></button>';
                         echo "</h3>";
 
@@ -52,8 +61,15 @@
             </div>
                 <div class="user"></div>
                 <div class="input">
-                    <input type="text" placeholder="the comment...">
-                    <button type="submit" class="btn">Send</button>
+                    <form action="report.php" method="POST">
+                    <input name="scamer" value="<?php echo $Tool?>">
+                    <input type="text" name="comment" placeholder="the comment...">
+                    <button type="submit" name="send" class="btn">Send</button>
+                    <?php
+
+
+                    ?>
+                </form>
                 </div>
             </div> 
         </div>

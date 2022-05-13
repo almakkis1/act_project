@@ -28,6 +28,7 @@ if(isset($_POST['submit']) ){
   if(mysqli_query($connect,$sql)){
 
     header('Location: login.php');
+
   }else{
       echo 'ERROR'. mysqli_connect_errno();
   }
