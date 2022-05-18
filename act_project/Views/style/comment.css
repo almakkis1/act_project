@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+/* .box1{
+    border-radius: 20px;
+    top: 20px;
+    position: absolute;
+    height: 30%;
+    width: 95%;
+    background: hsl(289, 52%, 19% );
+    
+} */
+
+/* .user1{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 5px;
+    position:absolute;
+    height: 40px;
+    width: 175px;
+    background: white;
+    top: 30px;
+    left: 30px;
+} */
+
+/* .report{
+    border-radius: 5px;
+    position:absolute;
+    height: 40px;
+    width: 175px;
+    background: white;
+    top: 30px;
+    left: 220px;
+    text-align: center;
+} */
+/* .contant{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 5px;
+    position: absolute;
+    top: 82px;
+    left: 30px;
+    width: 93%;
+    height: 137px;
+    background: white;
+    text-align: center;
+} */
+
+
+/* input{
+    position: relative;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    
+} */
+
+
