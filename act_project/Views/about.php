@@ -10,20 +10,6 @@ require 'style/header.php';
     </head>
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     <center body>
 
     <div id="about">
